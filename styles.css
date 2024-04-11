@@ -168,7 +168,9 @@ footer {
     position: absolute;
     width: 120px;
     height: 120px;
-    border: 2px solid #222;
+    border: 5px solid transparent; /* Asegúrate de tener un borde transparente para que el gradiente sea visible */
+    border-image: linear-gradient(to right, #e10000, #ff7c1e); /* Establece el gradiente como la imagen del borde */
+    border-image-slice: 1; /* Define cómo se corta la imagen del borde */
 }
 
 .cubo .cara1 { -webkit-transform: translateZ(60px);                                }
