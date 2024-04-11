@@ -32,6 +32,14 @@ header {
     color: #dd4b39; /* Color de Gmail */
 }
 
+/* Ocultar los artículos 7 y 8 cuando el ancho de la pantalla está entre 980px y 1320px */
+@media screen and (min-width: 980px) and (max-width: 1300px) {
+    .article-container:nth-child(7),
+    .article-container:nth-child(8) {
+        display: none;
+    }
+}
+
 /* Estilo para el menú desplegable */
 .dropdown {
     position: relative;
